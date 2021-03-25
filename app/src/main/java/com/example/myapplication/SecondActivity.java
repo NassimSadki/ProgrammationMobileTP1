@@ -24,17 +24,16 @@ public class SecondActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        /** méthode A :
+        /* méthode A :
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
         String shared_preferences_value = settings.getString("value", "");
         setTxtViewValeur(shared_preferences_value);
-        **/
+        */
 
-        /** méthode B : **/
+        /* méthode B : */
         Intent intent = getIntent();
-        String v= "" ;
         if (intent != null){
-            v=intent.getStringExtra("intent_value") ;
+            String v=intent.getStringExtra("intent_value") ;
             setTxtViewValeur(v);
         }
 
