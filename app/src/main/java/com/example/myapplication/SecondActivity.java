@@ -33,7 +33,7 @@ public class SecondActivity extends AppCompatActivity
         /* méthode B : */
         Intent intent = getIntent();
         if (intent != null){
-            String v=intent.getStringExtra("intent_value") ;
+            String v = intent.getStringExtra("intent_value") ;
             setTxtViewValeur(v);
         }
 
